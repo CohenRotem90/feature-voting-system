@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Feature Requests</h2>
+<ul>
+  {% for feature in features %}
+    <li>
+      <strong>{{ feature.title }}</strong> - {{ feature.description }}<br>
+      Votes: {{ feature.votes_count }}<br>
+      {% if user.is_authenticated %}
+        <form action="{% url 'vote_feature' feature.id %}" method="post">{% csrf_token %}
+          <button type="submit">Upvote</button>
+        </form>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'feature_create' %}">Submit a new feature</a>
+{% endblock %}

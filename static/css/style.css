@@ -1,0 +1,59 @@
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+a, .btn {
+  transition: all 0.2s;
+}
+.btn-info {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+.btn-info:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+.btn-outline-info {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+.btn-outline-info:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.main-title {
+  color: #3b82f6;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #94a3b8;
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button[type="submit"] {
+  margin-top: 0.75rem;
+}
