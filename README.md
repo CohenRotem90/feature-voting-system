@@ -1,6 +1,4 @@
-markdown
-Copy
-Edit
+
 # Feature Voting System
 
 A Django-based feature voting app where users can propose and vote on feature requests.
